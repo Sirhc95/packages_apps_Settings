@@ -49,6 +49,11 @@
                 android:title="@string/doze_title"
                 android:summary="@string/doze_summary" />
 
+        <Preference
+            android:key="expanded_desktop"
+            android:fragment="com.android.settings.cypher.fragments.ExpandedDesktop"
+            android:title="@string/expanded_desktop_category" />
+
         <!-- Hide night mode for now
         <ListPreference
             android:key="night_mode"
