@@ -9,7 +9,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v7-preference \
     android-support-v7-appcompat \
     android-support-v14-preference \
-    jsr305
+    jsr305 \
+	android-snackbar
 
 LOCAL_MODULE_TAGS := optional
 
@@ -22,6 +23,12 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v14/preference/res \
     frameworks/support/v7/appcompat/res \
     frameworks/support/v7/recyclerview/res
+	
+LOCAL_RESOURCE_DIR += external/android-snackbar/res
+
+LOCAL_AAPT_FLAGS := \
+    --auto-add-overlay \
+    --extra-packages com.nispok.snackbar
 
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform

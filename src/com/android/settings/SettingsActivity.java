@@ -49,6 +49,9 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SearchView;
+
+import com.nispok.snackbar.SnackbarManager;
+import com.android.internal.logging.MetricsLogger;
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.Settings.WifiSettingsActivity;
 import com.android.settings.accessibility.AccessibilitySettings;
@@ -828,6 +831,13 @@ public class SettingsActivity extends SettingsDrawerActivity
         unregisterReceiver(mBatteryInfoReceiver);
         unregisterReceiver(mUserAddRemoveReceiver);
         mDynamicIndexableContentMonitor.unregister();
+        SnackbarManager.dismiss();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        SnackbarManager.dismiss();
     }
 
     @Override
