@@ -25,4 +25,7 @@
 	<!-- Vendor version -->
     <string name="vendor_version">Versione fornitore</string>
     <string name="vendor_version_default">Sconosciuto</string>
+    
+    <!-- Snackbar action button -->
+    <string name="dev_settings_action_button">Impostazioni</string>
 </resources>
