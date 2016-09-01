@@ -15,8 +15,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 <!-- Development Settings -->
-    <!-- Dev Options Enabled by Default -->
-    <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
     <!-- ADB debugging notifications -->
     <string name="enable_adb_custom">Android debugging</string>
     <string name="enable_adb_summary_custom">Enable the Android Debug Bridge (adb) interface</string>
@@ -30,8 +28,8 @@
 
 <!-- Device Info Settings -->
     <!-- Nexus version -->
-    <string name="nexus_version">PureNexus version</string>
-    <string name="nexus_version_default">Unknown</string>
+    <string name="cypher_version">CypherOS version</string>
+    <string name="cypher_version_default">Unknown</string>
     <!-- Vendor version -->
     <string name="vendor_version">Vendor version</string>
     <string name="vendor_version_default">Unknown</string>

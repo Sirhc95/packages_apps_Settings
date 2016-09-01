@@ -1649,7 +1649,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private void writeAnimationScaleOption(int which, ListPreference pref, Object newValue) {
         try {
-            float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 0.5f;
+            float scale = newValue != null ? Float.parseFloat(newValue.toString()) : 1;
             mWindowManager.setAnimationScale(which, scale);
             updateAnimationScaleValue(which, pref);
         } catch (RemoteException e) {
@@ -2181,9 +2181,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                     return context.getSharedPreferences(DevelopmentSettings.PREF_FILE,
                             Context.MODE_PRIVATE).getBoolean(
                                     DevelopmentSettings.PREF_SHOW,
-                                    android.os.Build.TYPE.equals("eng")
-                                    || android.os.Build.TYPE.equals("userdebug")
-                                    || android.os.Build.TYPE.equals("user"));
+                                    android.os.Build.TYPE.equals("eng"));
                 }
 
                 @Override
