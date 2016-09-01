@@ -38,15 +38,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Switch;
 import android.widget.Toast;
-import android.widget.TextView;
-
-import com.nispok.snackbar.Snackbar;
-import com.nispok.snackbar.SnackbarManager;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settings.SettingsActivity;
 import com.android.settings.widget.SwitchBar;
 
@@ -67,12 +62,13 @@ public abstract class ZenModeRuleSettingsBase extends ZenModeSettingsBase
     private Preference mRuleName;
     private SwitchBar mSwitchBar;
     private DropDownPreference mZenMode;
+    private Toast mEnabledToast;
 
     abstract protected void onCreateInternal();
     abstract protected boolean setRule(AutomaticZenRule rule);
     abstract protected String getZenModeDependency();
     abstract protected void updateControlsInternal();
-    abstract protected String getEnabledToastText();
+    abstract protected int getEnabledToastText();
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -84,7 +80,7 @@ public abstract class ZenModeRuleSettingsBase extends ZenModeSettingsBase
         if (DEBUG) Log.d(TAG, "onCreate getIntent()=" + intent);
         if (intent == null) {
             Log.w(TAG, "No intent");
-            snackbarAndFinish();
+            toastAndFinish();
             return;
         }
 
@@ -172,13 +168,15 @@ public abstract class ZenModeRuleSettingsBase extends ZenModeSettingsBase
         mRule.setEnabled(enabled);
         setZenRule(mId, mRule);
         if (enabled) {
-            final String snackbarText = getEnabledToastText();
-            if (snackbarText != null) {
-                Utils.showSnackbar(snackbarText, Snackbar.SnackbarDuration.LENGTH_SHORT,
-                        null, null, mContext);
+            final int toastText = getEnabledToastText();
+            if (toastText != 0) {
+                mEnabledToast = Toast.makeText(mContext, toastText, Toast.LENGTH_SHORT);
+                mEnabledToast.show();
             }
         } else {
-            SnackbarManager.dismiss();
+            if (mEnabledToast != null) {
+                mEnabledToast.cancel();
+            }
         }
     }
 
@@ -230,7 +228,7 @@ public abstract class ZenModeRuleSettingsBase extends ZenModeSettingsBase
         mRule = getZenRule();
         if (DEBUG) Log.d(TAG, "mRule=" + mRule);
         if (!setRule(mRule)) {
-            snackbarAndFinish();
+            toastAndFinish();
             return true;
         }
         return false;
@@ -255,12 +253,10 @@ public abstract class ZenModeRuleSettingsBase extends ZenModeSettingsBase
         }
     }
 
-    private void snackbarAndFinish() {
-        final String message = mContext.getString(
-                R.string.zen_mode_rule_not_found_text);
+    private void toastAndFinish() {
         if (!mDeleting) {
-            Utils.showSnackbar(message, Snackbar.SnackbarDuration.LENGTH_SHORT,
-                    null, null, mContext);
+            Toast.makeText(mContext, R.string.zen_mode_rule_not_found_text, Toast.LENGTH_SHORT)
+                    .show();
         }
         getActivity().finish();
     }
