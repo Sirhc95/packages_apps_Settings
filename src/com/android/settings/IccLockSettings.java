@@ -431,8 +431,8 @@ public class IccLockSettings extends SettingsPreferenceFragment
         if (success) {
             mPinToggle.setChecked(mToState);
         } else {
-            Toast.makeText(getContext(), getPinPasswordErrorMessage(attemptsRemaining),
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getPinPasswordErrorMessage(attemptsRemaining), Toast.LENGTH_LONG)
+                    .show();
         }
         mPinToggle.setEnabled(true);
         resetDialogState();
@@ -440,11 +440,11 @@ public class IccLockSettings extends SettingsPreferenceFragment
 
     private void iccPinChanged(boolean success, int attemptsRemaining) {
         if (!success) {
-            Toast.makeText(getContext(), getPinPasswordErrorMessage(attemptsRemaining),
+            Toast.makeText(this, getPinPasswordErrorMessage(attemptsRemaining),
                     Toast.LENGTH_LONG)
                     .show();
         } else {
-            Toast.makeText(getContext(), mRes.getString(R.string.sim_change_succeeded),
+            Toast.makeText(this, mRes.getString(R.string.sim_change_succeeded),
                     Toast.LENGTH_SHORT)
                     .show();
 
