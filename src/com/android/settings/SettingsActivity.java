@@ -835,12 +835,6 @@ public class SettingsActivity extends SettingsDrawerActivity
     }
 
     @Override
-    public void onStop() {
-        super.onStop();
-        SnackbarManager.dismiss();
-    }
-
-    @Override
     public void onDestroy() {
         super.onDestroy();
 
