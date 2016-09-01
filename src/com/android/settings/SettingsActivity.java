@@ -49,9 +49,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SearchView;
-
-import com.nispok.snackbar.SnackbarManager;
-import com.android.internal.logging.MetricsLogger;
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.Settings.WifiSettingsActivity;
 import com.android.settings.accessibility.AccessibilitySettings;
@@ -831,13 +828,6 @@ public class SettingsActivity extends SettingsDrawerActivity
         unregisterReceiver(mBatteryInfoReceiver);
         unregisterReceiver(mUserAddRemoveReceiver);
         mDynamicIndexableContentMonitor.unregister();
-		SnackbarManager.dismiss();
-    }
-	
-	@Override
-    public void onStop() {
-        super.onStop();
-        SnackbarManager.dismiss();
     }
 
     @Override
@@ -1090,7 +1080,8 @@ public class SettingsActivity extends SettingsDrawerActivity
                 pm.hasSystemFeature(PackageManager.FEATURE_PRINTING), isAdmin, pm);
 
         final boolean showDev = mDevelopmentPreferences.getBoolean(
-                    DevelopmentSettings.PREF_SHOW, android.os.Build.TYPE.equals("eng"))
+                    DevelopmentSettings.PREF_SHOW, android.os.Build.TYPE.equals("eng")
+                    || android.os.Build.TYPE.equals("userdebug") || android.os.Build.TYPE.equals("user"))
                 && !um.hasUserRestriction(UserManager.DISALLOW_DEBUGGING_FEATURES);
         setTileEnabled(new ComponentName(packageName,
                         Settings.DevelopmentSettingsActivity.class.getName()),
