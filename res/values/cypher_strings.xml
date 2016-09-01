@@ -30,6 +30,9 @@
     <!-- Nexus version -->
     <string name="cypher_version">CypherOS version</string>
     <string name="cypher_version_default">Unknown</string>
+	<!-- CypherOS API level -->
+	<string name="cypher_api_level">API</string>
+  	<string name="cypher_api_level_flavor">Debug</string>
     <!-- Vendor version -->
     <string name="vendor_version">Vendor version</string>
     <string name="vendor_version_default">Unknown</string>

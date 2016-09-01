@@ -107,6 +107,12 @@
                 android:shouldDisableView="false"
                 android:title="@string/cypher_version"
                 android:summary="@string/cypher_version_default" />
+				
+		<!-- Device CypherOS API level -->
+        <Preference android:key="cypher_api"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/cypher_api_level"
+                android:summary="@string/cypher_api_level_flavor" />
 
         <!-- Vendor Version -->
         <Preference android:key="vendor_version"
