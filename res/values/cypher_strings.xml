@@ -41,10 +41,8 @@
     <string name="build_date_default">2014-01-01-0000</string>
     <!-- Model Name -->
     <string name="model_name">Model name</string>
-    <!-- Phone info shortcut -->
+   <!-- Phone info shortcut -->
     <string name="device_info_title">Phone info</string>
-	<!-- Snackbar action button -->
-    <string name="dev_settings_action_button">Settings</string>
 
 <!-- Sound & Notification Settings -->
     <!-- Volume settings - Volume adjustment sound -->
