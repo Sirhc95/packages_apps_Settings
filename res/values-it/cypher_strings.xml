@@ -36,7 +36,7 @@
      <!-- Vendor version -->
     <string name="vendor_version">Versione fornitore</string>
     <string name="vendor_version_default">Sconosciuto</string>
-    !-- Build date -->
+    <!-- Build date -->
     <string name="build_date">Data costruzione</string>
     <string name="build_date_default">2014-01-01-0000</string>
     <!-- Model Name -->
