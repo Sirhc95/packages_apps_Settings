@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Pure Nexus Project
+<!-- Copyright (C) 2016 CypherOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -41,8 +41,15 @@
     <string name="build_date_default">2014-01-01-0000</string>
     <!-- Model Name -->
     <string name="model_name">Model name</string>
-   <!-- Phone info shortcut -->
+    <!-- Phone info shortcut -->
     <string name="device_info_title">Phone info</string>
+	
+<!-- Gesture Settings -->
+    <!-- Gestures base -->
+	<string name="gesture_settings_title">Gestures</string>
+	<!-- Double-snap summary loaders -->
+	<string name="camera_double_tap_power_gesture_on">Double-snap is currently active</string>
+	<string name="camera_double_tap_power_gesture_off">Double-snap is currently non-active</string>
 
 <!-- Sound & Notification Settings -->
     <!-- Volume settings - Volume adjustment sound -->
