@@ -86,20 +86,6 @@
                 android:shouldDisableView="false"
                 android:title="@string/fcc_equipment_id"
                 android:summary="@string/device_info_default"/>
-
-        <!-- Device Baseband version -->
-        <Preference android:key="baseband_version"
-                android:enabled="false"
-                android:shouldDisableView="false"
-                android:title="@string/baseband_version"
-                android:summary="@string/device_info_default"/>
-
-        <!-- Device Kernel version -->
-        <Preference android:key="kernel_version"
-                android:enabled="false"
-                android:shouldDisableView="false"
-                android:title="@string/kernel_version"
-                android:summary="@string/device_info_default"/>
 		
         <!-- Nexus version -->
         <Preference android:key="cypher_version"
@@ -134,6 +120,20 @@
                 android:shouldDisableView="false"
                 android:title="@string/build_date"
                 android:summary="@string/build_date_default" />
+				
+		<!-- Device Baseband version -->
+        <Preference android:key="baseband_version"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/baseband_version"
+                android:summary="@string/device_info_default"/>
+
+        <!-- Device Kernel version -->
+        <Preference android:key="kernel_version"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/kernel_version"
+                android:summary="@string/device_info_default"/>
 
         <!-- SELinux status information -->
         <Preference android:key="selinux_status"
