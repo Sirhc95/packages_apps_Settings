@@ -43,8 +43,13 @@
     <string name="model_name">Nome modello</string>
 	<!-- Phone info shortcut -->
     <string name="device_info_title">Informazioni telefono</string>
-    <!-- Snackbar action button -->
-    <string name="dev_settings_action_button">Impostazioni</string>
+   
+<!-- Gesture Settings -->
+    <!-- Gestures base -->
+	<string name="gesture_settings_title">Gesti</string>
+	<!-- Double-snap summary loaders -->
+	<string name="camera_double_tap_power_gesture_on">Doppio scatto è attualmente attivo</string>
+	<string name="camera_double_tap_power_gesture_off">Doppio scatto è attualmente inattivo</string>
     
 <!-- Sound & Notification Settings -->
     <!-- Volume settings - Volume adjustment sound -->
