@@ -174,10 +174,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             // Remove for secondary users
             removePreference(KEY_SYSTEM_UPDATE_SETTINGS);
         }
-
-        // Read platform settings for additional system update setting
-        removePreferenceIfBoolFalse(KEY_UPDATE_SETTING,
-                R.bool.config_additional_system_update_setting_enable);
  
         // Remove manual entry if none present.
         removePreferenceIfBoolFalse(KEY_MANUAL, R.bool.config_show_manual);
@@ -435,10 +431,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 // TODO: system update needs to be fixed for non-owner user b/22760654
                 if (!um.isAdminUser()) {
                     keys.add(KEY_SYSTEM_UPDATE_SETTINGS);
-                }
-                if (!context.getResources().getBoolean(
-                        R.bool.config_additional_system_update_setting_enable)) {
-                    keys.add(KEY_UPDATE_SETTING);
                 }
                 return keys;
             }

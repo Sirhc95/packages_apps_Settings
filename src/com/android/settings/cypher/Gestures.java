@@ -31,6 +31,10 @@ import android.os.Bundle;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.preference.Preference;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceCategory;
+import android.preference.PreferenceScreen;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
@@ -45,10 +49,15 @@ import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
+import com.android.settings.R;
+import com.android.settings.SettingsActivity;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 import java.util.ArrayList;
 import java.util.List;
 
 import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
+import static android.provider.Settings.Secure.WAKE_GESTURE_ENABLED;
 import static android.provider.Settings.Secure.DOUBLE_TAP_TO_WAKE;
 
 public class Gestures extends SettingsPreferenceFragment implements
@@ -63,11 +72,6 @@ public class Gestures extends SettingsPreferenceFragment implements
 	private SwitchPreference mCameraDoubleTapPowerGesturePreference;
 	private SwitchPreference mTapToWakePreference;
 	private SwitchPreference mLiftToWakePreference;
-	
-	@Override
-    protected int getMetricsCategory() {
-        return MetricsEvent.DISPLAY;
-    }
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -158,6 +162,11 @@ public class Gestures extends SettingsPreferenceFragment implements
             Settings.Secure.putInt(getContentResolver(), WAKE_GESTURE_ENABLED, value ? 1 : 0);
         }
         return true;
+    }
+	
+	@Override
+    protected int getMetricsCategory() {
+        return MetricsEvent.DISPLAY;
     }
 	
 	private static class SummaryProvider implements SummaryLoader.SummaryProvider {
