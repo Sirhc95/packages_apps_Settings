@@ -37,9 +37,8 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.support.v14.preference.SwitchPreference;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.preference.SwitchPreference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -187,8 +186,7 @@ public class Gestures extends SettingsPreferenceFragment implements
 
         private void updateSummary() {
             boolean camgest = Settings.System.getInt(mContext.getContentResolver(),
-                    CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED)
-                    == CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
+                    CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED);
             mLoader.setSummary(this, mContext.getString(camgest ? R.string.camera_double_tap_power_gesture_on
                     : R.string.camera_double_tap_power_gesture_off));
         }
