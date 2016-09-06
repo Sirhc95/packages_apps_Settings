@@ -76,10 +76,10 @@ public class Gestures extends SettingsPreferenceFragment implements
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+		addPreferencesFromResource(R.xml.gesture_settings);
+		
         final Activity activity = getActivity();
         final ContentResolver resolver = activity.getContentResolver();
-
-        addPreferencesFromResource(R.xml.gesture_settings);
 		
 		if (isCameraDoubleTapPowerGestureAvailable(getResources())) {
             mCameraDoubleTapPowerGesturePreference
@@ -186,7 +186,7 @@ public class Gestures extends SettingsPreferenceFragment implements
         }
 
         private void updateSummary() {
-            boolean camgest = Settings.System.getInt(mContext.getContentResolver(),
+            boolean camgest = Settings.Secure.getInt(mContext.getContentResolver(),
                     CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, 0);
             mLoader.setSummary(this, mContext.getString(camgest ? R.string.camera_double_tap_power_gesture_on
                     : R.string.camera_double_tap_power_gesture_off));
