@@ -31,6 +31,7 @@
     <string name="cypher_version">Versione CypherOS</string>
     <string name="cypher_version_default">Sconosciuto</string>
 	<!-- CypherOS API level -->
+	<string name="cypher_version_summary">CypherOS <xliff:g id="version" example="3.0">%1$s</xliff:g></string>
 	<string name="cypher_api_level">API</string>
   	<string name="cypher_api_level_flavor">Debug</string>
      <!-- Vendor version -->
@@ -54,4 +55,8 @@
 <!-- Sound & Notification Settings -->
     <!-- Volume settings - Volume adjustment sound -->
     <string name="volume_adjust_sounds_title">Suoni di regolazione volume</string>
+<!-- Other sound settings -->
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Suono Screenshot</string>
+    <string name="screenshot_sound_summary">Riproduce un effetto sonoro quando si scatta uno screenshot</string>
 </resources>
