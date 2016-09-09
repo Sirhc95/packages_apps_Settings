@@ -166,7 +166,7 @@ public class Gestures extends SettingsPreferenceFragment implements
 	
 	@Override
     protected int getMetricsCategory() {
-        return MetricsEvent.DISPLAY;
+        return MetricsEvent.GESTURES;
     }
 	
 	private static class SummaryProvider implements SummaryLoader.SummaryProvider {
