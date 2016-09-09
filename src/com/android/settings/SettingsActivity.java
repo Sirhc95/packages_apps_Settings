@@ -70,6 +70,7 @@ import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.WriteSettingsDetails;
 import com.android.settings.applications.VrListenerSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.cypher.Additions;
 import com.android.settings.cypher.Gestures;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.SearchResultsSummary;
@@ -236,6 +237,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             //device_section
             Settings.HomeSettingsActivity.class.getName(),
             Settings.SoundSettingsActivity.class.getName(),
+			Settings.AdditionsActivity.class.getName(),
 			Settings.GesturesActivity.class.getName(),
             Settings.DisplaySettingsActivity.class.getName(),
             Settings.StorageSettingsActivity.class.getName(),
@@ -273,6 +275,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             UserDictionaryList.class.getName(),
             UserDictionarySettings.class.getName(),
             HomeSettings.class.getName(),
+			Additions.class.getName(),
 			Gestures.class.getName(),
             DisplaySettings.class.getName(),
             DeviceInfoSettings.class.getName(),
