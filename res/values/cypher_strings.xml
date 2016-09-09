@@ -33,7 +33,7 @@
 	<string name="cypher_version_summary">CypherOS <xliff:g id="version" example="3.0">%1$s</xliff:g></string>
 	<!-- CypherOS API level -->
 	<string name="cypher_api_level">API</string>
-  	<string name="cypher_api_level_flavor">Debug</string>
+  	<string name="cypher_api_level_flavor">BETA</string>
     <!-- Vendor version -->
     <string name="vendor_version">Vendor version</string>
     <string name="vendor_version_default">Unknown</string>
