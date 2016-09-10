@@ -57,7 +57,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Additions extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener, Indexable {
+        Indexable {
     private static final String TAG = "Additions";
 	
 	@Override
