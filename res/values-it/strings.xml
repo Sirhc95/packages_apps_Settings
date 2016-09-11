@@ -837,7 +837,7 @@
     <string name="wifi_calling_off_explanation" msgid="2597566001655908391">"Se le chiamate Wi-Fi sono attive, il tuo telefono può instradare le chiamate tramite reti Wi-Fi o la rete del tuo operatore, in base alle tue preferenze e alla potenza del segnale. Prima di attivare questa funzione, verifica tariffe e ulteriori dettagli con il tuo operatore."</string>
     <string name="home_settings" msgid="212375129455718176">"Home page"</string>
     <string name="display_settings_title" msgid="1708697328627382561">"Display"</string>
-    <string name="sound_settings" msgid="5534671337768745343">"Audio"</string>
+    <string name="sound_settings" msgid="5534671337768745343">"Audio &amp; notifiche"</string>
     <string name="ringtone_summary" msgid="2630023412632683493"></string>
     <string name="all_volume_title" msgid="4296957391257836961">"Volumi"</string>
     <string name="musicfx_title" msgid="3415566786340790345">"Effetti musicali"</string>
