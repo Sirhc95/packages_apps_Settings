@@ -44,10 +44,17 @@
     <string name="model_name">Nome modello</string>
 	<!-- Phone info shortcut -->
     <string name="device_info_title">Informazioni telefono</string>
-   
+<!-- Software information-->
+    <!-- Software information base -->
+	<string name="software_info_settings_title">Informazioni Software</string>
+	<!-- Build notes -->
+	<string name="buildnotes_settings_title">Note di costruzione</string>
+	<string name="buildnotes_settings_title_summary">Scopri le ultime modifiche di CypherOS e sapere che cosa c\'è di nuovo sul vostro ultimo rilascio</string>
+	<string name="buildnotes_settings_error">Impossibile caricare le note di costruzione</string>
+	
 <!-- Addition settings -->
     <!-- Additions base -->
-	<string name="addition_settings_title">Aggiunte</string>
+	<string name="addition_settings_title">Impostazioni Aggiuntive</string>
 	<!-- TODO: Summary loaders -->
 <!-- Gesture Settings -->
     <!-- Gestures base -->
