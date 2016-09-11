@@ -18,5 +18,10 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/software_info_settings_title">
 		
+		<!-- Build notes -->
+        <PreferenceScreen android:key="build_notes"
+                android:title="@string/buildnotes_settings_title"
+				android:summary="@string/buildnotes_settings_title_summary"
+                android:fragment="com.android.settings.cypher.deviceinfo.BuildNotes />
 
 </PreferenceScreen>
