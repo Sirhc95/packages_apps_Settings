@@ -44,6 +44,8 @@
     <string name="model_name">Model name</string>
     <!-- Phone info shortcut -->
     <string name="device_info_title">Phone info</string>
+	<!-- Software information-->
+	<string name="software_info_settings_title">Software information</string>
 	
 <!-- Addition settings -->
     <!-- Additions base -->

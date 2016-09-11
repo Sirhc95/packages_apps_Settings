@@ -19,6 +19,7 @@ package com.android.settings.search;
 import android.provider.SearchIndexableResource;
 import com.android.settings.cypher.Additions;
 import com.android.settings.cypher.Gestures;
+import com.android.settings.cypher.deviceinfo.SoftwareInfo;
 import com.android.settings.DateTimeSettings;
 import com.android.settings.DevelopmentSettings;
 import com.android.settings.DeviceInfoSettings;
@@ -326,6 +327,13 @@ public final class SearchIndexableResources {
                         NO_DATA_RES_ID,
                         Gestures.class.getName(),
                         R.drawable.ic_settings_gestures));
+						
+		sResMap.put(SoftwareInfo.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(SoftwareInfo.class.getName()),
+                        NO_DATA_RES_ID,
+                        SoftwareInfo.class.getName(),
+                        R.drawable.ic_settings_about));
     }
 
     private SearchIndexableResources() {
