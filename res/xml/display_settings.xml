@@ -85,6 +85,11 @@
                 android:key="auto_rotate"
                 android:summary="%s"
                 android:title="@string/display_auto_rotate_title" />
+				
+		<PreferenceScreen
+                android:key="display_rotation"
+                android:fragment="com.android.settings.cypher.fragments.DisplayRotation"
+                android:title="@string/display_rotation_title" />
 
         <PreferenceScreen
                 android:key="wifi_display"
