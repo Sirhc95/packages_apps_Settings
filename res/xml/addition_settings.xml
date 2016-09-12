@@ -18,5 +18,12 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/addition_settings_title">
 		
+		<!-- Statusbar settings -->
+		<PreferenceScreen
+                android:key="statusbar_settings"
+                android:title="@string/statusbar_settings_title"
+				android:summary="@string/statusbar_settings_title_summary"
+                android:fragment="com.android.settings.cypher.fragments.StatusbarSettings"
+                android:icon="@drawable/ic_settings_statusbar" />
 
 </PreferenceScreen>

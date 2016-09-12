@@ -20,6 +20,7 @@ import android.provider.SearchIndexableResource;
 import com.android.settings.cypher.Additions;
 import com.android.settings.cypher.Gestures;
 import com.android.settings.cypher.deviceinfo.SoftwareInfo;
+import com.android.settings.cypher.fragments.StatusbarSettings;
 import com.android.settings.DateTimeSettings;
 import com.android.settings.DevelopmentSettings;
 import com.android.settings.DeviceInfoSettings;
@@ -334,6 +335,13 @@ public final class SearchIndexableResources {
                         NO_DATA_RES_ID,
                         SoftwareInfo.class.getName(),
                         R.drawable.ic_settings_about));
+						
+		sResMap.put(StatusbarSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(StatusbarSettings.class.getName()),
+                        NO_DATA_RES_ID,
+                        StatusbarSettings.class.getName(),
+                        R.drawable.ic_settings_statusbar));
     }
 
     private SearchIndexableResources() {
