@@ -40,7 +40,7 @@
 		<!-- Software information -->
         <PreferenceScreen android:key="software_info"
                 android:title="@string/software_info_settings_title"
-                android:fragment="com.android.settings.cypher.deviceinfo.SoftwareInfo />
+                android:fragment="com.android.settings.cypher.deviceinfo.SoftwareInfo" />
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
