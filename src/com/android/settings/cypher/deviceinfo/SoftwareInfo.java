@@ -21,11 +21,13 @@ import android.app.ActivityManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.ComponentName;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemProperties;
@@ -60,6 +62,9 @@ public class SoftwareInfo extends SettingsPreferenceFragment implements
         Indexable {
     private static final String TAG = "SoftwareInfo";
 	
+	Preference mWebsiteUrl;
+    Preference mGoogleUrl;
+	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,11 +73,30 @@ public class SoftwareInfo extends SettingsPreferenceFragment implements
         final Activity activity = getActivity();
         final ContentResolver resolver = activity.getContentResolver();
 		
+		mWebsiteUrl = findPreference("on_the_web");
+        mGoogleUrl = findPreference("cypher_plus");
+		
 	}
 	
 	@Override
     protected int getMetricsCategory() {
         return MetricsEvent.ADDITIONS;
+    }
+	
+	@Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == mWebsiteUrl) {
+            launchUrl("http://cypheros.co");
+        } else if (preference == mGoogleUrl) {
+            launchUrl("https://plus.google.com/communities/111402352496339801246");
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    private void launchUrl(String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uriUrl);
+        getActivity().startActivity(intent);
     }
 	
 	public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

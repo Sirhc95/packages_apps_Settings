@@ -22,6 +22,26 @@
         <PreferenceScreen android:key="build_notes"
                 android:title="@string/buildnotes_settings_title"
 				android:summary="@string/buildnotes_settings_title_summary"
-                android:fragment="com.android.settings.cypher.deviceinfo.BuildNotes />
+                android:fragment="com.android.settings.cypher.deviceinfo.BuildNotes" />
+				
+	<PreferenceCategory
+        android:key="social"
+        android:title="@string/social_category_title">
 
+        <!-- CypherOS Website -->
+        <Preference
+            android:key="on_the_web"
+            android:title="@string/website_preference_title"
+            android:summary="@string/website_preference_title_summary"
+            android:icon="@drawable/ic_settings_ontheweb" />
+
+        <!-- CypherOS GooglePlus -->
+        <Preference
+            android:key="cypher_plus"
+            android:title="@string/google_preference_title"
+            android:summary="@string/google_preference_title_summary"
+            android:icon="@drawable/ic_settings_cypherplus" />
+
+    </PreferenceCategory>
+				
 </PreferenceScreen>
