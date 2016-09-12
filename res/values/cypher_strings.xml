@@ -107,6 +107,9 @@
     <string name="clock_date_format">Date format</string>
     <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
+	<!-- Status bar quick qs pulldown -->
+    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Drag down the right edge of the statusbar to reveal quick settings</string>
 	
 	<!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation</string>
