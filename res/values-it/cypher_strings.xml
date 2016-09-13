@@ -169,6 +169,6 @@
 
      <!-- USB data automatic unlock -->
      <string name="usb_data_auto_unlock_title">Sblocco dati USB</string>
-     <string name="usb_data_auto_unlock_summary">Consenti l\'accesso ai dati di sblocco per l'\utilizzo della memoria del telefono tramite USB (MTP, PTP)</string>
+     <string name="usb_data_auto_unlock_summary">Consenti l\'accesso ai dati di sblocco per l\'utilizzo della memoria del telefono tramite USB (MTP, PTP)</string>
      <string name="usb_data_auto_unlock_warning_summary">Il dispositivo stabilirà connessioni non protette ogni volta che ci si connette ad un PC. La schermata di blocco sicuro disattiverà questa opzione automaticamente.\n\nQuesto è ancora una funzione sperimentale, usare con cautela.</string>
 </resources>
