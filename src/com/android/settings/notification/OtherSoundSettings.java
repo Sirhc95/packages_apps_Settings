@@ -304,7 +304,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
             switch (id) {
                 case DLG_SAFE_HEADSET_VOLUME:
                     return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.attention)
+                    .setTitle(R.string.safe_headset_attention)
                     .setMessage(R.string.safe_headset_volume_warning_dialog_text)
                     .setPositiveButton(R.string.dlg_ok,
                         new DialogInterface.OnClickListener() {

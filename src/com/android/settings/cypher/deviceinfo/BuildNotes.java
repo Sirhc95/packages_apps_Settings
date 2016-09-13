@@ -30,7 +30,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Changelog extends Fragment {
+public class BuildNotes extends Fragment {
 
     private static final String CHANGELOG_PATH = "/system/etc/Changelog.txt";
 
