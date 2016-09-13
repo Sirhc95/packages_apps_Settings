@@ -29,6 +29,8 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
