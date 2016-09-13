@@ -125,9 +125,9 @@
     <string name="safe_headset_volume_title">Volume cuffie sicuro</string>
     <string name="safe_headset_volume_summary">Previene un livello alto del volume quando gli auricolari vengono inseriti</string>
     <string name="safe_headset_volume_warning_dialog_text">L\'ascolto ad alto volume per lunghi periodi può danneggiare l\'udito. Disabilitalo con cautela.</string>
-	<string name="safe_headset_attention">Attenzione</string>
-	<string name="dlg_ok">Ok</string>
-	<string name="dlg_cancel">Annulla</string>
+    <string name="safe_headset_attention">Attenzione</string>
+    <string name="dlg_ok">Ok</string>
+    <string name="dlg_cancel">Annulla</string>
 	
     <!-- Less Notification sounds -->
     <string name="notifications_category_title">Notifiche</string>
@@ -148,4 +148,27 @@
     <string name="volume_keys_control_media_stream">Controllo multimediale</string>
     <string name="volume_keys_control_media_stream_summary">I tasti del volume controllano il volume multimediale piuttosto che le notifiche</string>
 
+    <!-- Expanded desktop -->
+    <string name="expanded_desktop_category">Desktop espanso</string>
+    <string name="expanded_hide_nothing">Non nascondere nulla</string>
+    <string name="expanded_hide_status">Nascondi barra di stato</string>
+    <string name="expanded_hide_navigation">Nascondi barra di navigazione</string>
+    <string name="expanded_hide_both">Nascondi entrambi</string>
+    <string name="expanded_nothing_to_show">Per aggiungere una configurazione personalizzata dello schermo esteso per ogni app, disattiva \"Attivo per tutti\"</string>
+
+    <string name="expanded_desktop_state">Stato espanso</string>
+    <string name="expanded_enabled_for_all">Attivo per tutti</string>
+    <string name="expanded_user_configurable">Configurabili dall\'utente</string>
+    <string name="expanded_desktop_style">Stile desktop esteso</string>
+    <string name="expanded_desktop_style_description">Seleziona lo stile predefinito del desktop esteso</string>
+    <string name="expanded_desktop_title">Opzioni desktop esteso</string>
+	
+    <!-- Advanced storage settings -->
+    <string name="storage_advanced_titlebar">Archiviazione avanzata</string>
+    <string name="storage_menu_advanced">Avanzate</string>
+
+     <!-- USB data automatic unlock -->
+     <string name="usb_data_auto_unlock_title">Sblocco dati USB</string>
+     <string name="usb_data_auto_unlock_summary">Consenti l\'accesso ai dati di sblocco per l'\utilizzo della memoria del telefono tramite USB (MTP, PTP)</string>
+     <string name="usb_data_auto_unlock_warning_summary">Il dispositivo stabilirà connessioni non protette ogni volta che ci si connette ad un PC. La schermata di blocco sicuro disattiverà questa opzione automaticamente.\n\nQuesto è ancora una funzione sperimentale, usare con cautela.</string>
 </resources>
