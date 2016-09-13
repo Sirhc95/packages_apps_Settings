@@ -29,18 +29,26 @@
         android:title="@string/social_category_title">
 
         <!-- CypherOS Website -->
-        <Preference
+        <PreferenceScreen
             android:key="on_the_web"
             android:title="@string/website_preference_title"
             android:summary="@string/website_preference_title_summary"
-            android:icon="@drawable/ic_settings_ontheweb" />
+            android:icon="@drawable/ic_settings_ontheweb">
+		<intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://cypheros.co" />
+        </PreferenceScreen>
 
         <!-- CypherOS GooglePlus -->
-        <Preference
+        <PreferenceScreen
             android:key="cypher_plus"
             android:title="@string/google_preference_title"
             android:summary="@string/google_preference_title_summary"
-            android:icon="@drawable/ic_settings_cypherplus" />
+            android:icon="@drawable/ic_settings_cypherplus">
+		<intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://plus.google.com/communities/111402352496339801246" />
+        </PreferenceScreen>
 
     </PreferenceCategory>
 				

@@ -17,33 +17,12 @@
 package com.android.settings.cypher.deviceinfo;
 
 import android.app.Activity;
-import android.app.ActivityManager;
-import android.content.ContentResolver;
-import android.content.Context;
-import android.content.ComponentName;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.res.Configuration;
-import android.content.res.Resources;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.SystemProperties;
-import android.os.UserHandle;
-import android.os.UserManager;
-import android.preference.PreferenceActivity;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceFragment;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.provider.SearchIndexableResource;
-import android.provider.Settings;
-import android.text.TextUtils;
-import android.util.Log;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -52,7 +31,6 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import com.android.settings.R;
-import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import java.util.ArrayList;
@@ -81,22 +59,6 @@ public class SoftwareInfo extends SettingsPreferenceFragment implements
 	@Override
     protected int getMetricsCategory() {
         return MetricsEvent.ADDITIONS;
-    }
-	
-	@Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mWebsiteUrl) {
-            launchUrl("http://cypheros.co");
-        } else if (preference == mGoogleUrl) {
-            launchUrl("https://plus.google.com/communities/111402352496339801246");
-        }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
-    }
-
-    private void launchUrl(String url) {
-        Uri uriUrl = Uri.parse(url);
-        Intent intent = new Intent(Intent.ACTION_VIEW, uriUrl);
-        getActivity().startActivity(intent);
     }
 	
 	public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
