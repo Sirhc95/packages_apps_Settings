@@ -119,7 +119,7 @@
                 android:summary="@string/vendor_version_default" />
 
         <!-- Detailed build version -->
-        <Preference android:key="build_number"
+        <Preference android:key="cypher_build"
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/build_number"
