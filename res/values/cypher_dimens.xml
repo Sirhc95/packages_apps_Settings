@@ -141,4 +141,9 @@
 
     <!-- Text size of the color picker help screen summary text -->
     <dimen name="color_picker_help_screen_summary_text_size">12sp</dimen>
+
+    <!-- Gesture Anywhere -->
+    <dimen name="ga_gesture_thumbnail_inset">8dip</dimen>
+    <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
+
 </resources>

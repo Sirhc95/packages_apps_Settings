@@ -173,6 +173,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".cypher.launchgestures.LaunchGesturesBuilderActivity" />
+        <activity android:name=".cypher.launchgestures.LaunchGesturesCreateActivity" />   
+
         <!-- Wireless Controls -->
 
         <activity android:name="Settings$WirelessSettingsActivity"
