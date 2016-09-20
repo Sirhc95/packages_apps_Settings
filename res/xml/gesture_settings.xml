@@ -31,15 +31,5 @@
                 android:key="tap_to_wake"
                 android:title="@string/tap_to_wake"
                 android:summary="@string/tap_to_wake_summary" />
-				
-    <PreferenceCategory android:key="screen_gestures_category"
-	            android:title="@string/screen_gestures_category_title">
-				
-		    <PreferenceScreen
-			    android:key="launch_gestures_pref"
-				android:title="@string/launch_gestures_title"
-				android:summary="@string/launch_gestures_title_summary"
-				android:fragment="com.android.settings.cypher.launchgestures.LaunchGestureSettings" />
-				
-	</PreferenceCategory>
+
 </PreferenceScreen>

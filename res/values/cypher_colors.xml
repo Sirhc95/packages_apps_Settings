@@ -56,8 +56,5 @@
     <!-- Colors of the help screen -->
     <color name="color_picker_help_screen_background">#e0000000</color>
     <color name="color_picker_help_summary_text_color">#b3ffffff</color>
-	
-	<!-- Gesture Anywhere -->
-    <color name="ga_gesture_color">@android:color/holo_blue_light</color>
 
 </resources>
