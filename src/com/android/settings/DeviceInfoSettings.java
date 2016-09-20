@@ -70,6 +70,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_CYPHER_VERSION = "cypher_version";
+	private static final String KEY_CYPHER_API = "cypher_api";
     private static final String KEY_VENDOR_VERSION = "vendor_version";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
@@ -130,6 +131,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         setValueSummary(KEY_CYPHER_VERSION, "ro.cypher.version");
         findPreference(KEY_CYPHER_VERSION).setEnabled(true);
+		setValueSummary(KEY_CYPHER_API, "ro.cypher.api");
+        findPreference(KEY_CYPHER_API).setEnabled(true);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
