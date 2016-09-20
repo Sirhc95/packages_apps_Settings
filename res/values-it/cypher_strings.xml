@@ -30,7 +30,6 @@
     <!-- Nexus version -->
     <string name="cypher_version">Versione CypherOS</string>
     <string name="cypher_version_default">Sconosciuto</string>
-
 	<!-- CypherOS API level -->
 	<string name="cypher_version_summary">CypherOS <xliff:g id="version" example="3.0">%1$s</xliff:g></string>
 	<string name="cypher_api_level">API</string>
@@ -78,11 +77,11 @@
     <string name="screenshot_sound_title">Suono Screenshot</string>
     <string name="screenshot_sound_summary">Riproduce un effetto sonoro quando si scatta uno screenshot</string>
 
+
 <!-- Statusbar Settings -->
     <!-- Statusbar base -->
-	<string name="statusbar_settings_title">Barra di stato</string>
-	<string name="statusbar_settings_title_summary">Cambia l\'aspetto grafico della vostra barra di stato con una serie di personalizzazioni</string>
-    
+    <string name="statusbar_settings_title">Barra di stato</string>
+    <string name="statusbar_settings_title_summary">Cambia l\'aspetto grafico della vostra barra di stato con una serie di personalizzazioni</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Orologio &amp; data</string>
     <string name="status_bar_clock_style_title">Posizione</string>
@@ -95,8 +94,7 @@
     <string name="status_bar_am_pm_normal">Normale</string>
     <string name="status_bar_am_pm_small">Piccola</string>
     <string name="status_bar_am_pm_hidden">Nascosta</string>
-	
-    <!-- Statusbar - Date -->
+     <!-- Statusbar - Date -->
     <string name="clock_date_display">Data</string>
     <string name="clock_date_display_summary">Mostra la data personalizzata prima dell\'orologio</string>
     <string name="clock_date_display_none">Nascondi</string>
@@ -110,6 +108,9 @@
     <string name="clock_date_format">Formato data</string>
     <string name="clock_date_string_edittext_title">Deve essere in formato data ad esempio, mm/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Inserire una stringa</string>
+    <!-- Status bar quick qs pulldown -->
+    <string name="status_bar_quick_qs_pulldown_title">Discesa rapida</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Trascia verso il basso dal bordo destro della barra di stato per visualizzare le impostazioni rapide</string>
 	
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotazione</string>
@@ -128,7 +129,7 @@
     <string name="safe_headset_attention">Attenzione</string>
     <string name="dlg_ok">Ok</string>
     <string name="dlg_cancel">Annulla</string>
-	
+
     <!-- Less Notification sounds -->
     <string name="notifications_category_title">Notifiche</string>
     <string name="less_notification_sounds_title">Suoni di notifica meno frequenti</string>
@@ -155,7 +156,6 @@
     <string name="expanded_hide_navigation">Nascondi barra di navigazione</string>
     <string name="expanded_hide_both">Nascondi entrambi</string>
     <string name="expanded_nothing_to_show">Per aggiungere una configurazione personalizzata dello schermo esteso per ogni app, disattiva \"Attivo per tutti\"</string>
-
     <string name="expanded_desktop_state">Stato espanso</string>
     <string name="expanded_enabled_for_all">Attivo per tutti</string>
     <string name="expanded_user_configurable">Configurabili dall\'utente</string>
@@ -166,9 +166,73 @@
     <!-- Advanced storage settings -->
     <string name="storage_advanced_titlebar">Archiviazione avanzata</string>
     <string name="storage_menu_advanced">Avanzate</string>
+    
+    <!-- USB data automatic unlock -->
+    <string name="usb_data_auto_unlock_title">Sblocco dati USB</string>
+    <string name="usb_data_auto_unlock_summary">Consenti l\'accesso ai dati di sblocco per l\'utilizzo della memoria del telefono tramite USB (MTP, PTP)</string>
+    <string name="usb_data_auto_unlock_warning_summary">Il dispositivo stabilirà connessioni non protette ogni volta che ci si connette ad un PC. La schermata di blocco sicuro disattiverà questa opzione automaticamente.\n\nQuesto è ancora una funzione sperimentale, usare con cautela.</string>
 
-     <!-- USB data automatic unlock -->
-     <string name="usb_data_auto_unlock_title">Sblocco dati USB</string>
-     <string name="usb_data_auto_unlock_summary">Consenti l\'accesso ai dati di sblocco per l\'utilizzo della memoria del telefono tramite USB (MTP, PTP)</string>
-     <string name="usb_data_auto_unlock_warning_summary">Il dispositivo stabilirà connessioni non protette ogni volta che ci si connette ad un PC. La schermata di blocco sicuro disattiverà questa opzione automaticamente.\n\nQuesto è ancora una funzione sperimentale, usare con cautela.</string>
-</resources>
+    <!-- Volume Steps -->
+   <string name="volume_steps_title">Livelli del volume</string>
+   <string name="volume_steps_alarm_title">Livello volume: Allarme</string>
+   <string name="volume_steps_dtmf_title">Livello volume: DTMF</string>
+   <string name="volume_steps_music_title">Livello volume: Musica</string>
+   <string name="volume_steps_notification_title">Livello volume: Notifica</string>
+   <string name="volume_steps_ring_title">Livello volume: Suoneria</string>
+   <string name="volume_steps_system_title">Livello volume: Sistema</string>
+   <string name="volume_steps_voice_call_title">Livello volume: Chiamata vocale</string>
+   <string name="volume_steps_reset">Ripritina</string>
+   <string name="volume_steps_60">60</string>
+   <string name="volume_steps_45">45</string>
+   <string name="volume_steps_30">30</string>
+   <string name="volume_steps_15">15</string>
+   <string name="volume_steps_7">7</string>
+   <string name="volume_steps_5">5</string>
+   
+   <!-- Color picker -->
+    <string name="color_picker_fragment_title">Selettore del colore</string>
+    <string name="apply_color_title">Applica colore</string>
+    <string name="edit_hex_title">Valore esadecimale</string>
+    <string name="palette_aoscp_title">AOSCP</string>
+    <string name="palette_material_title">Material</string>
+    <string name="palette_rgb_title">RGB</string>
+    <string name="reset_color_title">Ripritina</string>
+    <string name="reset_android_title">Predefinito di Android</string>
+    <string name="reset_aoscp_title">Predefinito di AOSCP</string>
+    <string name="reset_theme_default_title">Tema predefinito</string>
+    <string name="favorites_title">Preferiti</string>
+    <string name="hide_favorites_title">Nascondi i preferiti</string>
+    <string name="show_favorites_title">Mostra i preferiti</string>
+    <string name="hide_help_title">Nascondi aiuto</string>
+    <string name="show_help_title">Mostra aiuto</string>
+    <string name="empty_title">Vuoto</string>
+
+    <!-- Color picker help screen -->
+    <string name="color_picker_help_screen_title">Aiuto selettore del colore</string>
+    <string name="color_picker_help_ab_title">Barra delle azioni:</string>
+    <string name="color_picker_help_ab_back_title">Pulsante indietro:</string>
+    <string name="color_picker_help_ab_back_summary">Chiudere il selettore del colore senza applicare il nuovo colore, (Annulla). \nQuesto ha lo stesso effetto quando si clicca il pulsante indietro sulla barra di spostamento.</string>
+    <string name="color_picker_help_ab_name_title">Titolo:</string>
+    <string name="color_picker_help_ab_name_summary">Mostra solo il titolo, nessuna funzione aggiuntiva</string>
+    <string name="color_picker_help_ab_color_apply_title">Anteprima del colore e applicazione:</string>
+    <string name="color_picker_help_ab_color_apply_summary">L\'anteprima del colore è sempre visibile. \nSe il nuovo colore non è uguale al vecchio colore, l\'anteprima del colore sarà ampliato, per consentire di applicare il nuovo colore.</string>
+    <string name="color_picker_help_ab_hex_title">Valore esadecimale:</string>
+    <string name="color_picker_help_ab_hex_summary">Mostra il campo di immissione esadecimale.\nI valori esadecimali devono essere in formato esadecimale del colore:\n\#aarrggbb\', (\alpha\' (trasparenza), \'rosso\', \'verde\' e \'blu\').\nIl pulsante indietro chiude il campo d\'immissione esadecimale senza impostare il valore esadecimale.\nIl pulsante Applica imposta il valore esadecimale come nuovo colore senza applicare il nuovo colore.</string>
+    <string name="color_picker_help_ab_menu_title">Pulsante menù:</string>
+    <string name="color_picker_help_ab_menu_reset_title">Ripritina:</string>
+    <string name="color_picker_help_ab_menu_reset_summary">Il nuovo colore consente di ripristinare l\'impostazione predefinita di Android, AOSCP o il tema relativo al colore senza applicare il nuovo colore.</string>
+    <string name="color_picker_help_ab_menu_favorites_title">Mostra/nascondi preferiti:</string>
+    <string name="color_picker_help_ab_menu_favorites_summary">Mostra/nascondi i preferiti. \nNascondi i preferiti senza ripristinare i colori.</string>
+    <string name="color_picker_help_ab_menu_help_title">Mostra/nascondi aiuto:</string>
+    <string name="color_picker_help_ab_menu_help_summary">Mostra/nascondi questa schermata di aiuto.</string>
+    <string name="color_picker_help_colors_title">Colori:</string>
+    <string name="color_picker_help_picker_view_title">Colore pannello:</string>
+    <string name="color_picker_help_picker_view_summary">Scegli un colore per impostarlo senza applicare la nuova gamma di colori. \nIl colore può essere modificato utilizzando il dispositivo di scorrimento sul lato destro</string>
+    <string name="color_picker_help_color_buttons_title">Colore pulsanti:</string>
+    <string name="color_picker_help_favorites_title">Preferiti:</string>
+    <string name="color_picker_help_favorites_summary">I colori dei preferiti sono predefiniti. \nIl nuovo colore può essere salvato come preferito in qualsiasi momento per mezzo di una pressione prolungata (uno slot vuoto sarà sostituito da un nuovo colore preferito). \nUn click imposta il colore preferito come nuovo colore, senza applicare il nuovo colore.</string>
+    <string name="color_picker_help_palette_title">Palette:\n(AOSCP, Material and RGB)</string>
+    <string name="color_picker_help_palette_summary">Tutti i colori delle palette hanno un valore fisso. \nUn click imposta il colore preferito come nuovo colore, senza applicare il nuovo colore.</string>
+    <string name="color_picker_help_do_not_show_title">Non mostrare più</string>
+    <string name="color_picker_help_button_ok_title">OK</string>
+ </resources>
