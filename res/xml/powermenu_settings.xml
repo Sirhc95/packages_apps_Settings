@@ -28,11 +28,6 @@
         android:key="screenshot"
         android:title="@string/power_menu_screenshot_title"
         android:defaultValue="false" />
-		
-	<SwitchPreference
-        android:key="screenrecord"
-        android:title="@string/power_menu_screenrecord_title"
-        android:defaultValue="false" />
 
     <SwitchPreference
         android:key="airplane"
