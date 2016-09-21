@@ -222,7 +222,7 @@ public class LaunchGesturesBuilderActivity extends ListActivity
     }
 
     private void editGesture(NamedGesture gesture) {
-        Intent intent = new Intent(this, LaunchCreateCreateActivity.class);
+        Intent intent = new Intent(this, LaunchGesturesCreateActivity.class);
         intent.putExtra("uri", gesture.uri);
         intent.putExtra("name", gesture.name);
         startActivityForResult(intent, REQUEST_NEW_GESTURE);
@@ -233,7 +233,7 @@ public class LaunchGesturesBuilderActivity extends ListActivity
         if (TextUtils.isEmpty(uri) || TextUtils.isEmpty(friendlyName)) {
             return;
         }
-        Intent intent = new Intent(this, LaunchCreateCreateActivity.class);
+        Intent intent = new Intent(this, LaunchGesturesCreateActivity.class);
         intent.putExtra("uri", uri);
         intent.putExtra("name", friendlyName);
         startActivityForResult(intent, REQUEST_NEW_GESTURE);

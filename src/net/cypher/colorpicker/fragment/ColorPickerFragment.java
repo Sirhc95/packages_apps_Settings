@@ -424,7 +424,7 @@ public class ColorPickerFragment extends Fragment implements
             int layoutResId = layouts.getResourceId(i, 0);
             LinearLayout layout = (LinearLayout) mColorPickerView.findViewById(layoutResId);
             TextView paletteTitle = (TextView) layout.findViewById(R.id.palette_color_buttons_title);
-            int titleResId = R.string.palette_aosip_title;
+            int titleResId = R.string.palette_aoscp_title;
             if (i == PALETTE_MATERIAL) {
                 titleResId = R.string.palette_material_title;
                 colors = mResources.obtainTypedArray(R.array.color_picker_material_palette);
