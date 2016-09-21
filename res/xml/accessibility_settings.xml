@@ -88,10 +88,6 @@
     <PreferenceCategory
         android:key="display_category"
         android:title="@string/accessibility_display_title" >
-		<PreferenceScreen 
-		    android:key="power_menu"
-			android:title="@string/power_menu_title"
-            android:fragment="com.android.settings.cypher.fragments.PowerMenu" />
         <SwitchPreference
             android:key="toggle_inversion_preference"
             android:title="@string/accessibility_display_inversion_preference_title"
