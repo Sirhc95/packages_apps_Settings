@@ -59,7 +59,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 	private static final String KEY_SYSTEM_UPDATE_SETTINGS = "system_update_settings";
     private static final String PROPERTY_SELINUX_STATUS = "ro.build.selinux";
     private static final String KEY_KERNEL_VERSION = "kernel_version";
-    private static final String KEY_CYPHER_BUILD = "cypher_bild";
+    private static final String KEY_CYPHER_BUILD_NUMBER = "cypher_build_number";
     private static final String KEY_DEVICE_MODEL = "device_model";
     private static final String KEY_SELINUX_STATUS = "selinux_status";
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
@@ -125,8 +125,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL + DeviceInfoUtils.getMsvSuffix());
         setValueSummary(KEY_EQUIPMENT_ID, PROPERTY_EQUIPMENT_ID);
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL);
-        setValueSummary(KEY_CYPHER_BUILD, "ro.cypher.build");
-        findPreference(KEY_CYPHER_BUILD).setEnabled(true);
+        setValueSummary(KEY_CYPHER_BUILD_NUMBER, "ro.cypher.build");
+        findPreference(KEY_CYPHER_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(DeviceInfoUtils.getFormattedKernelVersion());
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         setValueSummary(KEY_CYPHER_VERSION, "ro.cypher.version");
@@ -232,7 +232,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                     Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
                 }
             }
-        } else if (preference.getKey().equals(KEY_CYPHER_BUILD)) {
+        } else if (preference.getKey().equals(KEY_CYPHER_BUILD_NUMBER)) {
             // Don't enable developer options for secondary users.
             if (!mUm.isAdminUser()) return true;
 
