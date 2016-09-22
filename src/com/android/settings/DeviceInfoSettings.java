@@ -363,10 +363,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 	
 	private void setBuildSummary(String preference, String property) {
         try {
-            String maintainers = SystemProperties.get(property,
+            String buildnum = SystemProperties.get(property,
                     getResources().getString(R.string.device_info_default));
-            findPreference(preference).setSummary(maintainers);
-            if (maintainers.contains(",")) {
+            findPreference(preference).setSummary(buildnum);
+            if (buildnum.contains(",")) {
                 findPreference(preference).setTitle(
                         getResources().getString(R.string.build_number));
             }
