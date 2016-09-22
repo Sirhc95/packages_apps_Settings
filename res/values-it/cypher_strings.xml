@@ -293,20 +293,4 @@
   <string name="select_custom_app_title">Seleziona un\'app personalizzata</string>
   <string name="select_custom_activity_title">Seleziona un\'attività personalizzata</string>
   <string name="profile_applist_title">Applicazioni</string>
-  
-    <!-- PowerMenu Settings -->
-    <string name="power_menu_title">Menù accensione</string>
-    <!-- Power menu customization -->
-    <string name="power_menu_reboot_title">Riavvio</string>
-    <string name="power_menu_screenshot_title">Screenshot</string>
-    <string name="power_menu_screenrecord_title">Registra schermo</string>
-    <string name="power_menu_airplane_title">Modalità aereo</string>
-    <string name="power_menu_users_title">Cambia utente</string>
-    <string name="power_menu_search_title">Ricerca</string>
-    <string name="power_menu_voice_title">Ricerca vocale</string>
-    <string name="power_menu_settings_title">Impostazioni rapide</string>
-    <string name="power_menu_lockdown_title">Blocco dispositivo</string>
-    <string name="power_menu_bug_report_title">Segnalazione errore</string>
-    <string name="power_menu_sound_title">Pannello audio</string>
-    <string name="power_menu_bug_report_disabled">La segnalazione degli errori è disattivata nelle impostazioni di sviluppo</string>
- </resources>
+</resources>
