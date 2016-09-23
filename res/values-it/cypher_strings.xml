@@ -37,6 +37,8 @@
     <!-- Vendor version -->
     <string name="vendor_version">Versione fornitore</string>
     <string name="vendor_version_default">Sconosciuto</string>
+    <!-- Build number default -->
+    <string name="build_number_fallback">CNRQAA-R1</string>
     <!-- Build date -->
     <string name="build_date">Data di costruzione</string>
     <string name="build_date_default">2014-01-01-0000</string>
@@ -297,4 +299,59 @@
    <!-- double tap to sleep - statusbar -->
    <string name="double_tap_to_sleep_title">Doppio tocco per sospendere</string>
    <string name="double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per mettere il dispositivo a dormire</string>
+   
+    <!-- Doze pulse options -->
+    <string name="summary_doze_enabled">Abilitato</string>
+    <string name="summary_doze_disabled">Disabilitato</string>
+    <string name="doze_overwrite_value_title">Sovrascrivere i predefiniti</string>
+    <string name="doze_overwrite_value_summary">Consentire l\'override dei valori predefiniti con configurazione utente</string>
+    <string name="doze_pulse_title">Impostazioni configurabili dall\'utente</string>
+    <string name="doze_pulse_duration_in_title">Dissolvenza in entrata</string>
+    <string name="doze_pulse_duration_in_summary"></string>
+    <string name="doze_pulse_duration_visible_title">Durata visibile</string>
+    <string name="doze_pulse_duration_visible_summary"></string>
+    <string name="doze_pulse_duration_out_title">Dissolvenza in uscita</string>
+    <string name="doze_pulse_duration_out_summary"></string>
+    <string name="doze_trigger_pickup_title">Attivazione gesto sollevamento</string>
+    <string name="doze_trigger_pickup_summary_on">Doze pulse sarà attivato dagli eventi del gesto di sollevamento rilevati dal sensore</string>
+    <string name="doze_trigger_pickup_summary_off">Il sensore gesto di sollevamento non sarà utilizzato come un meccanismo di attivazione</string>
+    <string name="doze_trigger_notification_title">Attivazione notificaNotification trigger</string>
+    <string name="doze_trigger_notification_summary_on">Doze pulse sarà attivato dalle notifiche</string>
+    <string name="doze_trigger_notification_summary_off">Le notifiche non saranno utilizzate come attivazione</string>
+    <string name="doze_brightness_level_title">Livello di luminosità</string>
+    <string name="onehundred_ms">100 ms</string>
+    <string name="twofifty_ms">250 ms</string>
+    <string name="fivehundred_ms_default">500 ms (predefinito)</string>
+    <string name="sevenfifty_ms">750 ms</string>
+    <string name="one_second">1 s</string>
+    <string name="onehalf_second">1.5 s</string>
+    <string name="two_second">2 s</string>
+    <string name="twohalf_second">2.5 s</string>
+    <string name="three_second_default">3 s (predefinito)</string>
+    <string name="threehalf_second">3.5 s</string>
+    <string name="four_second">4 s</string>
+    <string name="fourhalf_second">4.5 s</string>
+    <string name="five_second">5 s</string>
+	
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Traffico di rete</string>
+    <string name="network_traffic_title_summary">Monitorare i dati in entrata e in uscita e la velocità del wifi direttamente dalla barra di stato</string>
+    <string name="show_network_traffic_state">Monitoraggio del traffico della barra di stato</string>
+    <string name="show_network_traffic_unit">Unità di visualizzazione</string>
+    <string name="show_network_traffic_frequency">Intervallo di aggiornamento</string>
+    <string name="show_network_traffic_disable">Disabilitato</string>
+    <string name="show_network_traffic_up">In uscita</string>
+    <string name="show_network_traffic_down">In entrata</string>
+    <string name="show_network_traffic_all">In uscita e in entrata</string>
+    <string name="show_network_traffic_bit">Bit al secondo</string>
+    <string name="show_network_traffic_byte">Byte al secondo</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
+    <string name="network_traffic_autohide">Nascondi automaticamente</string>
+    <string name="network_traffic_autohide_summary">Nascondi il traffico rete quando non c\'è attività</string>
+    <string name="network_traffic_autohide_threshold">Soglia di inattività</string>
+    <string name="network_traffic_hidearrow">Nascondi frecce</string>
+    <string name="network_traffic_hidearrow_summary">Nascondi le frecce degli indicatori del traffico rete</string>
 </resources>
