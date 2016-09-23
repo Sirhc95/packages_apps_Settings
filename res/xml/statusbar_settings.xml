@@ -23,6 +23,11 @@
             android:title="@string/status_bar_quick_qs_pulldown_title"
             android:summary="@string/status_bar_quick_qs_pulldown_summary"
             android:defaultValue="true" />
+			
+		<Preference
+            android:key="nettraffrag" 
+            android:title="@string/network_traffic_title"
+            android:summary="@string/network_traffic_title_summary" />
 		
     <PreferenceCategory
         android:title="@string/status_bar_clock_title">
