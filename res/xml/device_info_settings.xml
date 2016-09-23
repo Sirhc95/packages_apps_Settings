@@ -123,7 +123,7 @@
                 android:enabled="false"
                 android:shouldDisableView="false"
                 android:title="@string/build_number"
-                android:summary="@string/device_info_default"/>
+                android:summary="@string/build_number_fallback"/>
 
         <!-- build date -->
         <Preference android:key="build_date"

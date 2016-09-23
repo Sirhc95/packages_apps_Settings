@@ -37,6 +37,8 @@
     <!-- Vendor version -->
     <string name="vendor_version">Vendor version</string>
     <string name="vendor_version_default">Unknown</string>
+	<!-- Build number default -->
+	<string name="build_number_fallback">CNRQAA-R1</string>
     <!-- Build date -->
     <string name="build_date">Build date</string>
     <string name="build_date_default">2014-01-01-0000</string>
