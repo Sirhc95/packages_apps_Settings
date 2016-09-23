@@ -29,7 +29,7 @@ import android.preference.SwitchPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
-import com.android.settings.preference.SeekBarPreference;
+import com.android.settings.SeekBarPreference;
 
 public class NetworkTraffic extends PreferenceFragment
             implements OnPreferenceChangeListener  {
