@@ -372,4 +372,11 @@
     <string name="smart_pulldown_none">no notifications</string>
     <string name="smart_pulldown_dismissable">no dismissable</string>
     <string name="smart_pulldown_ongoing">no ongoing</string>
+	
+	<!-- Quick Settings -->
+	<string name="quick_settings_title">Quick settings</string>
+	<string name="quick_settings_title_summary">Adjust the logic and layout of the quick settings panel</string>
+	<!-- Quick settings animation-->
+    <string name="qs_animation_title">Animation</string>
+    <string name="qs_animation_summary">Utilize the current quick settings animation when opening the panel</string>
 </resources>
