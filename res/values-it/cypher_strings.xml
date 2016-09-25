@@ -164,6 +164,10 @@
     <string name="expanded_desktop_style_description">Seleziona lo stile predefinito del desktop esteso</string>
     <string name="expanded_desktop_title">Opzioni desktop esteso</string>
 	
+     <!-- Navbar tuner -->
+     <string name="navbar_tuner_title">Sintonizzatore barra di navigazione</string>
+     <string name="navbar_tuner_summary">Personalizza i pulsanti e la posizione</string>	
+
     <!-- Advanced storage settings -->
     <string name="storage_advanced_titlebar">Archiviazione avanzata</string>
     <string name="storage_menu_advanced">Avanzate</string>
@@ -354,4 +358,33 @@
     <string name="network_traffic_autohide_threshold">Soglia di inattività</string>
     <string name="network_traffic_hidearrow">Nascondi frecce</string>
     <string name="network_traffic_hidearrow_summary">Nascondi le frecce degli indicatori del traffico rete</string>
+	
+    <!-- Quick pull down-->
+    <string name="quick_pulldown_title">Discesa rapida</string>
+    <string name="quick_pulldown_summary">Il bordo %1$s della barra di stato tira giù le impostazioni rapide</string>
+    <string name="quick_pulldown_summary_always">Mostra sempre le impostazioni rapide sulla barra di stato a tendina</string>
+    <string name="quick_pulldown_off">Non attiva</string>
+    <string name="quick_pulldown_left">Sinistra</string>
+    <string name="quick_pulldown_right">Destra</string>
+    <string name="quick_pulldown_always">Sempre</string>
+	
+    <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">Discesa intelligente</string>
+    <string name="smart_pulldown_summary">Apri le impostazioni rapide quando ci sono %1$s notifiche presenti</string>
+    <string name="smart_pulldown_none_summary">Aprire le impostazioni rapide quando non sono presenti notifiche</string>
+    <string name="smart_pulldown_off">Non attiva</string>
+    <string name="smart_pulldown_none">Nessuna notifica</string>
+    <string name="smart_pulldown_dismissable">Non rimovibili</string>
+    <string name="smart_pulldown_ongoing">Non in corso</string>
+	
+    <!-- Preference to show/hide embedded battery percentage [CHAR LIMIT=50] -->
+    <string name="show_battery_percentage">Visualizza la percentuale della batteria</string>
+    <string name="show_battery_percentage_summary">Visualizza la percentuale della batteria quando non in carica</string>
+	
+     <!-- Quick Settings -->
+     <string name="quick_settings_title">Impostazioni rapide</string>
+     <string name="quick_settings_title_summary">Regola la logica e la posizione del pannello delle impostazioni rapide</string>
+     <!-- Quick settings animation-->
+     <string name="qs_animation_title">Animazione</string>
+     <string name="qs_animation_summary">Utilizza l\'animazione corrente nelle impostazioni rapide quando si apre il pannello</string>
 </resources>
