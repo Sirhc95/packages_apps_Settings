@@ -166,7 +166,7 @@
 	
      <!-- Navbar tuner -->
      <string name="navbar_tuner_title">Sintonizzatore barra di navigazione</string>
-     <string name="navbar_tuner_summary">Personalizza i pulsanti e posizione</string>	
+     <string name="navbar_tuner_summary">Personalizza i pulsanti e la posizione</string>	
 
     <!-- Advanced storage settings -->
     <string name="storage_advanced_titlebar">Archiviazione avanzata</string>
