@@ -38,7 +38,7 @@
     <string name="vendor_version">Versione fornitore</string>
     <string name="vendor_version_default">Sconosciuto</string>
     <!-- Build number default -->
-    <string name="build_number_fallback">CNRQAA-R1</string>
+    <string name="build_number_fallback">CNRQAA - Release 2</string>
     <!-- Build date -->
     <string name="build_date">Data di costruzione</string>
     <string name="build_date_default">2014-01-01-0000</string>
